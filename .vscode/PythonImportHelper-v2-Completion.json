@@ -1,6 +1,31 @@
 [
     {
+        "label": "django.contrib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -24,11 +49,44 @@
         "documentation": {}
     },
     {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -49,6 +107,30 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "NoReverseMatch",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -88,6 +170,182 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "arkauth",
+        "description": "arkauth",
+        "isExtraImport": true,
+        "detail": "arkauth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_site",
+        "importPath": "django.contrib.sites.shortcuts",
+        "description": "django.contrib.sites.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.contrib.sites.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "urlsafe_base64_decode",
+        "importPath": "django.utils.http",
+        "description": "django.utils.http",
+        "isExtraImport": true,
+        "detail": "django.utils.http",
+        "documentation": {}
+    },
+    {
+        "label": "urlsafe_base64_encode",
+        "importPath": "django.utils.http",
+        "description": "django.utils.http",
+        "isExtraImport": true,
+        "detail": "django.utils.http",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "force_bytes",
+        "importPath": "django.utils.encoding",
+        "description": "django.utils.encoding",
+        "isExtraImport": true,
+        "detail": "django.utils.encoding",
+        "documentation": {}
+    },
+    {
+        "label": "force_text",
+        "importPath": "django.utils.encoding",
+        "description": "django.utils.encoding",
+        "isExtraImport": true,
+        "detail": "django.utils.encoding",
+        "documentation": {}
+    },
+    {
+        "label": "DjangoUnicodeDecodeError",
+        "importPath": "django.utils.encoding",
+        "description": "django.utils.encoding",
+        "isExtraImport": true,
+        "detail": "django.utils.encoding",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "BadHeaderError",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ecommerse.manage",
+        "description": "ecommerse.manage",
+        "isExtraImport": true,
+        "detail": "ecommerse.manage",
+        "documentation": {}
+    },
+    {
+        "label": "mail",
+        "importPath": "django.core",
+        "description": "django.core",
+        "isExtraImport": true,
+        "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -110,6 +368,14 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "constants",
+        "importPath": "django.contrib.messages",
+        "description": "django.contrib.messages",
+        "isExtraImport": true,
+        "detail": "django.contrib.messages",
         "documentation": {}
     },
     {
@@ -157,6 +423,51 @@
         "documentation": {}
     },
     {
+        "label": "ArkauthConfig",
+        "kind": 6,
+        "importPath": "ecommerse.arkauth.apps",
+        "description": "ecommerse.arkauth.apps",
+        "peekOfCode": "class ArkauthConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'arkauth'",
+        "detail": "ecommerse.arkauth.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "ecommerse.arkauth.urls",
+        "description": "ecommerse.arkauth.urls",
+        "peekOfCode": "urlpatterns = [\n  path(\"signup/\",views.signup,name=\"signup\"),\n  path(\"login/\",views.loginuser,name=\"login\"),\n  path(\"logout/\",views.logoutuser,name=\"logout\")\n]",
+        "detail": "ecommerse.arkauth.urls",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "ecommerse.arkauth.views",
+        "description": "ecommerse.arkauth.views",
+        "peekOfCode": "def signup(request):\n    if request.method==\"POST\":\n        email=request.POST['email']\n        password=request.POST['password']\n        conform_password=request.POST['password2']\n        if password!=conform_password:\n            messages.warning(request,\"Password is not Matching!\")\n            return render(request,\"auth/signup.html\")\n        try:\n            if User.objects.get(username=email):",
+        "detail": "ecommerse.arkauth.views",
+        "documentation": {}
+    },
+    {
+        "label": "loginuser",
+        "kind": 2,
+        "importPath": "ecommerse.arkauth.views",
+        "description": "ecommerse.arkauth.views",
+        "peekOfCode": "def loginuser(request):\n    if request.method==\"POST\":\n        username=request.POST['email']\n        password=request.POST['password']\n        myuser=authenticate(request,username=username,password=password)\n        if myuser is not None:\n            login(request,myuser)\n            messages.success(request,\"Login in success\")\n            return render(request,\"index.html\")\n        else:",
+        "detail": "ecommerse.arkauth.views",
+        "documentation": {}
+    },
+    {
+        "label": "logoutuser",
+        "kind": 2,
+        "importPath": "ecommerse.arkauth.views",
+        "description": "ecommerse.arkauth.views",
+        "peekOfCode": "def logoutuser(request):\n    logout(request)\n    messages.success(request,\"logout user!\")\n    return redirect(\"/arkauth/login/\")",
+        "detail": "ecommerse.arkauth.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "ecommerse.ecommerse.asgi",
@@ -197,7 +508,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp'",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -206,7 +517,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp'\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp',\n    'arkauth'\n]",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -305,7 +616,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAEG_TAGS={\n    messages.ERROR:'danger'\n}",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -314,7 +625,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAEG_TAGS={\n    messages.ERROR:'danger'\n}",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -323,7 +634,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.urls",
         "description": "ecommerse.ecommerse.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('arkapp.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('arkapp.urls')),\n    path('arkauth/',include('arkauth.urls'))\n]",
         "detail": "ecommerse.ecommerse.urls",
         "documentation": {}
     },

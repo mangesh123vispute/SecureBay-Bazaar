@@ -76,8 +76,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto" href="/arkauth/logout/">Logout</a></li>
+          <li><a class="getstarted scrollto" href="#about">Welcome {{user.username}}</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -423,7 +423,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="{% static "assets/img/testimonials/testimonials-1.jpg" %} class="testimonial-img" alt="" ">
+                  <img src="{% static 'assets/img/testimonials/test.jpg' %}" class="testimonial-img" alt="">
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                   <p>
