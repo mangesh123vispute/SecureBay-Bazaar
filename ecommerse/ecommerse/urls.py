@@ -20,6 +20,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('arkapp.urls')),
-    path('arkauth/',include('arkauth.urls'))
-    
+    path('arkauth/',include('arkauth.urls')),
 ]

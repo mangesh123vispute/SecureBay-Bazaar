@@ -15,6 +15,7 @@ import django.db
 from pathlib import Path
 import os
 from django.contrib.messages import constants as messages
+# from ecommerse.settings import EMAIL_HOST_PASSWORD
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -135,3 +136,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MESSAEG_TAGS={
     messages.ERROR:'danger'
 }
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'
+EMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'
+EMAIL_PORT = 587    
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
