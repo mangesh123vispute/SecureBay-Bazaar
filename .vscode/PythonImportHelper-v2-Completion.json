@@ -219,6 +219,23 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.tokens",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.tokens",
+        "description": "django.contrib.auth.tokens",
+        "detail": "django.contrib.auth.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetTokenGenerator",
+        "importPath": "django.contrib.auth.tokens",
+        "description": "django.contrib.auth.tokens",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.tokens",
+        "documentation": {}
+    },
+    {
         "label": "PasswordResetTokenGenerator",
         "importPath": "django.contrib.auth.tokens",
         "description": "django.contrib.auth.tokens",
@@ -233,6 +250,23 @@
         "importPath": "six",
         "description": "six",
         "detail": "six",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.messages",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.messages",
+        "description": "django.contrib.messages",
+        "detail": "django.contrib.messages",
+        "documentation": {}
+    },
+    {
+        "label": "constants",
+        "importPath": "django.contrib.messages",
+        "description": "django.contrib.messages",
+        "isExtraImport": true,
+        "detail": "django.contrib.messages",
         "documentation": {}
     },
     {
@@ -396,6 +430,14 @@
         "documentation": {}
     },
     {
+        "label": "EMAIL_HOST_USER",
+        "importPath": "ecommerse.settings",
+        "description": "ecommerse.settings",
+        "isExtraImport": true,
+        "detail": "ecommerse.settings",
+        "documentation": {}
+    },
+    {
         "label": "View",
         "importPath": "django.views.generic",
         "description": "django.views.generic",
@@ -435,14 +477,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "constants",
-        "importPath": "django.contrib.messages",
-        "description": "django.contrib.messages",
-        "isExtraImport": true,
-        "detail": "django.contrib.messages",
         "documentation": {}
     },
     {
@@ -503,7 +537,7 @@
         "kind": 5,
         "importPath": "ecommerse.arkauth.urls",
         "description": "ecommerse.arkauth.urls",
-        "peekOfCode": "urlpatterns = [\n  path(\"signup/\",views.signup,name=\"signup\"),\n  path(\"login/\",views.loginuser,name=\"login\"),\n  path(\"logout/\",views.logoutuser,name=\"logout\"),\n  path('activate/<uidb64>/<token>',views.ActivateAccountView.as_view(),name=\"activate\"),\n]",
+        "peekOfCode": "urlpatterns = [\n  path(\"signup/\",views.signup,name=\"signup\"),\n  path(\"login/\",views.loginuser,name=\"login\"),\n  path(\"logout/\",views.logoutuser,name=\"logout\"),\n  path('activate/<uidb64>/<token>',views.ActivateAccountView.as_view(),name=\"activate\"),\n  path('request-reset-email/',views.RequestResetEmailView.as_view(),name=\"request-reset-email\"),  \n  path('set-new-password/<uidb64>/<token>/', views.SetNewPasswordView.as_view(), name='set-new-password'),\n]",
         "detail": "ecommerse.arkauth.urls",
         "documentation": {}
     },
@@ -531,6 +565,24 @@
         "importPath": "ecommerse.arkauth.views",
         "description": "ecommerse.arkauth.views",
         "peekOfCode": "class ActivateAccountView(View):\n    def get(self, request, uidb64, token):\n        try:\n            id = force_str(urlsafe_base64_decode(uidb64))\n            user = User.objects.get(pk=id)\n            if generate_token.check_token(user, token):  # Make sure you have a valid check_token function\n                user.is_active = True\n                user.save()\n                messages.success(request, \"Account Activated Successfully\")\n                return redirect('/arkauth/login/')",
+        "detail": "ecommerse.arkauth.views",
+        "documentation": {}
+    },
+    {
+        "label": "RequestResetEmailView",
+        "kind": 6,
+        "importPath": "ecommerse.arkauth.views",
+        "description": "ecommerse.arkauth.views",
+        "peekOfCode": "class RequestResetEmailView(View):\n    def get(self,request):\n            return render(request,\"auth/request-reset-email.html\")\n    def post(self,request):\n        email=request.POST[\"email\"]\n        user=User.objects.filter(email=email)   \n        if user.exists():\n            current_site=get_current_site(request)\n            email_subject='[Reset Your Password]'\n            message=render_to_string('auth/reset-user-password.html',{ 'domain':'127.0.0.1:8000',",
+        "detail": "ecommerse.arkauth.views",
+        "documentation": {}
+    },
+    {
+        "label": "SetNewPasswordView",
+        "kind": 6,
+        "importPath": "ecommerse.arkauth.views",
+        "description": "ecommerse.arkauth.views",
+        "peekOfCode": "class SetNewPasswordView(View):\n    def get( self,request,uidb64,token):\n        context={\n            \"uidb64\":uidb64,\n            \"token\":token\n        }\n        try:\n            user_id=force_str(urlsafe_base64_decode(uidb64))\n            user=User.objects.get(pk=user_id)\n            if not PasswordResetTokenGenerator().check_token(user,token):",
         "detail": "ecommerse.arkauth.views",
         "documentation": {}
     },

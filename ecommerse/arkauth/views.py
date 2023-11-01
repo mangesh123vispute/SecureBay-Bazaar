@@ -1,5 +1,7 @@
 
 import arkapp
+import django.contrib.auth.tokens
+import django.contrib.messages
 import django.db
 from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth import authenticate,logout,login
@@ -14,14 +16,16 @@ from django.utils.encoding import force_bytes,force_str,DjangoUnicodeDecodeError
 # emails
 from django.core.mail import send_mail,EmailMultiAlternatives,EmailMessage
 from django.core.mail import BadHeaderError ,send_mail
-
 from django.core import mail
 from django.conf import settings    
 from django.contrib import messages
 from ecommerse.settings import EMAIL_HOST, EMAIL_HOST_USER
+from ecommerse.settings import EMAIL_HOST_USER
 from .utils import TokenGenerator,generate_token
 from django.views.generic import View
 import threading
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
+
 # threading
 
 class EmailThread(threading.Thread):
@@ -108,3 +112,65 @@ class ActivateAccountView(View):
             user = None
             messages.error(request, "Invalid activation link")
             return render(request, "auth/activatefail.html")
+
+class RequestResetEmailView(View):
+    def get(self,request):
+            return render(request,"auth/request-reset-email.html")
+    def post(self,request):
+        email=request.POST["email"]
+        user=User.objects.filter(email=email)   
+
+        if user.exists():
+            current_site=get_current_site(request)
+            email_subject='[Reset Your Password]'
+            message=render_to_string('auth/reset-user-password.html',{ 'domain':'127.0.0.1:8000',
+            "uidb64" : urlsafe_base64_encode(str(user[0].pk).encode('utf-8')),
+            'token':PasswordResetTokenGenerator().make_token(user[0])
+            }
+            )
+
+            email_message = EmailMultiAlternatives(email_subject, message, settings.EMAIL_HOST_USER, [email])
+            email_message.send()
+            messages.info(request,"We have sent you an email with instructions on how to reset the password")
+            return render(request,"auth/request-reset-email.html")
+
+class SetNewPasswordView(View):
+    def get( self,request,uidb64,token):
+        context={
+            "uidb64":uidb64,
+            "token":token
+        }
+        try:
+            user_id=force_str(urlsafe_base64_decode(uidb64))
+            user=User.objects.get(pk=user_id)
+
+            if not PasswordResetTokenGenerator().check_token(user,token):
+                messages.warning(request,"Password Reset Link is Invalid")
+                return render(request,"auth/request-reset-email.html")
+        except DjangoUnicodeDecodeError as identifier:
+            pass
+        return render(request,"auth/set-new-password.html",context) 
+
+    def post(self,request,uidb64,token):
+        context={
+            "uidb64":uidb64,
+            "token":token
+        }
+        password=request.POST["pass1"]
+        conform_password=request.POST["pass2"]
+        if password!=conform_password:
+            messages.warning(request,"Password is Not Matching" )
+            return render(request,"auth/set-new-password.html",context)
+        try:
+            user_id=force_str(urlsafe_base64_decode(uidb64))
+            user=User.objects.get(pk=user_id)
+            user.set_password(password)
+            user.save()
+            messages.success(request,"Password changed successfully please login with new password")
+            return redirect("/arkauth/login/")
+        except DjangoUnicodeDecodeError as identifier:
+            messages.error(request,"Something went wrong")
+            return render(request,"auth/set-new-password.html",context)
+        return render(request,"auth/set-new-password.html",context)    
+
+

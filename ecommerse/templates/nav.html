@@ -81,7 +81,14 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
+          
+          {% if user.is_authenticated %}
           <li><a class="nav-link scrollto" href="/arkauth/logout/">Logout</a></li>
+          {% else %}
+          <li><a class="nav-link scrollto" href="/arkauth/login/">Login</a></li>
+          {% endif %}
+            
+          
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

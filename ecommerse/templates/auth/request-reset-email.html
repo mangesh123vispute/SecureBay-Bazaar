@@ -1,6 +1,6 @@
 {% extends "nav.html" %}
 {% block title %}
-AispaceX Login
+AispaceX Reset password
 {% endblock title %}
 
 
@@ -45,10 +45,12 @@ AispaceX Login
         </div>
         <div class="col-md-4">
           <h1 data-aos="fade-up">
-        Login 
+    Request a reset Link
         </h1>
         <div class="container"  data-aos="fade-up" data-aos-delay="400">
         </div>
+        <br>
+        <br>
 
         {% comment %} rendering the messages  {% endcomment %}
         
@@ -59,27 +61,20 @@ AispaceX Login
             <span aria-hidden="true">&times;</span>
           </button>
         </div>{% endfor %}
-          <form action="/arkauth/login/" method="post">
+          <form action="/arkauth/request-reset-email/" method="post">
             {% csrf_token %}
             <div class="form-group">
               <input type="email" class="form-control" id="email" placeholder="Email" name='email'>
             </div>
             <br>
-            <div class="form-group">
-              <input type="text" class="form-control" id="password" placeholder="password" name='password'>
-            </div>
-            <br>
-            <br>
-            <br>
-            <button type="submit" class="btn">Log in</button>
+         
+            <button type="submit" class="btn">Submit</button>
             <br>
             <br>
             <hr>
-            Not Already user? 
-            <a href="/arkauth/signup/">Register</a>
+         <a href="/arkauth/login/">Go back</a>
             <br>
-           <span> forgot password?
-            <a href="/arkauth/request-reset-email/">Reset password</a></span>
+          
           </form>
         </div>
     </div>
