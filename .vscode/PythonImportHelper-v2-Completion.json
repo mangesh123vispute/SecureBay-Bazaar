@@ -1,18 +1,84 @@
 [
     {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "arkapp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "arkapp",
+        "description": "arkapp",
+        "detail": "arkapp",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "arkapp",
+        "description": "arkapp",
+        "isExtraImport": true,
+        "detail": "arkapp",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "django.contrib",
         "description": "django.contrib",
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
         "detail": "django.contrib",
         "documentation": {}
     },
@@ -54,31 +120,6 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "django.db",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db",
-        "description": "django.db",
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -154,20 +195,20 @@
         "documentation": {}
     },
     {
-        "label": "arkapp",
+        "label": "django.contrib.auth.models",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "arkapp",
-        "description": "arkapp",
-        "detail": "arkapp",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
-        "label": "views",
-        "importPath": "arkapp",
-        "description": "arkapp",
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "arkapp",
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -200,6 +241,14 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
         "documentation": {}
     },
     {
@@ -291,14 +340,6 @@
         "description": "django.contrib.auth",
         "isExtraImport": true,
         "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -406,6 +447,23 @@
         "documentation": {}
     },
     {
+        "label": "django.conf",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -480,6 +538,22 @@
         "documentation": {}
     },
     {
+        "label": "signup",
+        "importPath": "arkauth.views",
+        "description": "arkauth.views",
+        "isExtraImport": true,
+        "detail": "arkauth.views",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -497,6 +571,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.migrations.0001_initial",
+        "description": "ecommerse.arkapp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Product',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('product_name', models.CharField(max_length=50)),",
+        "detail": "ecommerse.arkapp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "ArkappConfig",
         "kind": 6,
         "importPath": "ecommerse.arkapp.apps",
@@ -506,21 +589,48 @@
         "documentation": {}
     },
     {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.models",
+        "description": "ecommerse.arkapp.models",
+        "peekOfCode": "class Product(models.Model):\n    product_id=models.AutoField\n    product_name=models.CharField(max_length=50)\n    category=models.CharField(max_length=50,default=\"\")\n    subcategroy=models.CharField(max_length=50,default=\"\")\n    price=models.IntegerField(default=0)\n    desc=models.CharField(max_length=300)\n    pub_date=models.DateField()\n    image=models.ImageField(upload_to=\"shop/images\",default=\"\")\n    def __str__(self):",
+        "detail": "ecommerse.arkapp.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "ecommerse.arkapp.urls",
         "description": "ecommerse.arkapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',views.index,name=\"index\")\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\")\n]",
         "detail": "ecommerse.arkapp.urls",
         "documentation": {}
     },
     {
-        "label": "index",
+        "label": "home",
         "kind": 2,
         "importPath": "ecommerse.arkapp.views",
         "description": "ecommerse.arkapp.views",
-        "peekOfCode": "def index(request):\n    return render(request,\"index.html\")",
+        "peekOfCode": "def home(request):\n    current_user=request.user  \n    print(current_user)\n    allprods=[]\n    catpods=Product.objects.values('category','id')\n    cats={ item['category'] for item in catpods }\n    for cat in cats:\n        prod=Product.objects.filter(category=cat)\n        n=len(prod)\n        nSlides=n//4+ceil((n/4)-(n//4))",
         "detail": "ecommerse.arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkauth.migrations.0001_initial",
+        "description": "ecommerse.arkauth.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Product',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('product_name', models.CharField(max_length=50)),",
+        "detail": "ecommerse.arkauth.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkauth.migrations.0002_delete_product",
+        "description": "ecommerse.arkauth.migrations.0002_delete_product",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arkauth', '0001_initial'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Product',\n        ),\n    ]",
+        "detail": "ecommerse.arkauth.migrations.0002_delete_product",
         "documentation": {}
     },
     {
@@ -735,7 +845,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\n# Default primary key field type",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -744,7 +854,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -753,7 +863,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')\n# Default primary key field type",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -762,7 +872,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAEG_TAGS={\n    messages.ERROR:'danger'\n}",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAEG_TAGS={",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -834,7 +944,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.urls",
         "description": "ecommerse.ecommerse.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('arkapp.urls')),\n    path('arkauth/',include('arkauth.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('arkapp.urls')),\n    path('arkauth/',include('arkauth.urls')),\n]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)",
         "detail": "ecommerse.ecommerse.urls",
         "documentation": {}
     },
