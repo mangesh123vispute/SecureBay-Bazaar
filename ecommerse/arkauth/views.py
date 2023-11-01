@@ -95,7 +95,7 @@ def logoutuser(request):
 
 
 class ActivateAccountView(View):
-    def get(self, request, uidb64, token):
+    def get(self, request, uidb64, token):  # sourcery skip: avoid-builtin-shadow
         try:
             id = force_str(urlsafe_base64_decode(uidb64))
             user = User.objects.get(pk=id)
@@ -123,7 +123,9 @@ class RequestResetEmailView(View):
         if user.exists():
             current_site=get_current_site(request)
             email_subject='[Reset Your Password]'
-            message=render_to_string('auth/reset-user-password.html',{ 'domain':'127.0.0.1:8000',
+            message=render_to_string('auth/reset-user-password.html',{ 
+                
+            'domain':'127.0.0.1:8000',
             "uidb64" : urlsafe_base64_encode(str(user[0].pk).encode('utf-8')),
             'token':PasswordResetTokenGenerator().make_token(user[0])
             }
@@ -137,8 +139,8 @@ class RequestResetEmailView(View):
 class SetNewPasswordView(View):
     def get( self,request,uidb64,token):
         context={
-            "uidb64":uidb64,
-            "token":token
+            'uidb64':uidb64,
+            'token':token
         }
         try:
             user_id=force_str(urlsafe_base64_decode(uidb64))
@@ -153,8 +155,8 @@ class SetNewPasswordView(View):
 
     def post(self,request,uidb64,token):
         context={
-            "uidb64":uidb64,
-            "token":token
+            'uidb64':uidb64,
+            'token':token
         }
         password=request.POST["pass1"]
         conform_password=request.POST["pass2"]

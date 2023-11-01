@@ -564,7 +564,7 @@
         "kind": 6,
         "importPath": "ecommerse.arkauth.views",
         "description": "ecommerse.arkauth.views",
-        "peekOfCode": "class ActivateAccountView(View):\n    def get(self, request, uidb64, token):\n        try:\n            id = force_str(urlsafe_base64_decode(uidb64))\n            user = User.objects.get(pk=id)\n            if generate_token.check_token(user, token):  # Make sure you have a valid check_token function\n                user.is_active = True\n                user.save()\n                messages.success(request, \"Account Activated Successfully\")\n                return redirect('/arkauth/login/')",
+        "peekOfCode": "class ActivateAccountView(View):\n    def get(self, request, uidb64, token):  # sourcery skip: avoid-builtin-shadow\n        try:\n            id = force_str(urlsafe_base64_decode(uidb64))\n            user = User.objects.get(pk=id)\n            if generate_token.check_token(user, token):  # Make sure you have a valid check_token function\n                user.is_active = True\n                user.save()\n                messages.success(request, \"Account Activated Successfully\")\n                return redirect('/arkauth/login/')",
         "detail": "ecommerse.arkauth.views",
         "documentation": {}
     },
@@ -573,7 +573,7 @@
         "kind": 6,
         "importPath": "ecommerse.arkauth.views",
         "description": "ecommerse.arkauth.views",
-        "peekOfCode": "class RequestResetEmailView(View):\n    def get(self,request):\n            return render(request,\"auth/request-reset-email.html\")\n    def post(self,request):\n        email=request.POST[\"email\"]\n        user=User.objects.filter(email=email)   \n        if user.exists():\n            current_site=get_current_site(request)\n            email_subject='[Reset Your Password]'\n            message=render_to_string('auth/reset-user-password.html',{ 'domain':'127.0.0.1:8000',",
+        "peekOfCode": "class RequestResetEmailView(View):\n    def get(self,request):\n            return render(request,\"auth/request-reset-email.html\")\n    def post(self,request):\n        email=request.POST[\"email\"]\n        user=User.objects.filter(email=email)   \n        if user.exists():\n            current_site=get_current_site(request)\n            email_subject='[Reset Your Password]'\n            message=render_to_string('auth/reset-user-password.html',{ ",
         "detail": "ecommerse.arkauth.views",
         "documentation": {}
     },
@@ -582,7 +582,7 @@
         "kind": 6,
         "importPath": "ecommerse.arkauth.views",
         "description": "ecommerse.arkauth.views",
-        "peekOfCode": "class SetNewPasswordView(View):\n    def get( self,request,uidb64,token):\n        context={\n            \"uidb64\":uidb64,\n            \"token\":token\n        }\n        try:\n            user_id=force_str(urlsafe_base64_decode(uidb64))\n            user=User.objects.get(pk=user_id)\n            if not PasswordResetTokenGenerator().check_token(user,token):",
+        "peekOfCode": "class SetNewPasswordView(View):\n    def get( self,request,uidb64,token):\n        context={\n            'uidb64':uidb64,\n            'token':token\n        }\n        try:\n            user_id=force_str(urlsafe_base64_decode(uidb64))\n            user=User.objects.get(pk=user_id)\n            if not PasswordResetTokenGenerator().check_token(user,token):",
         "detail": "ecommerse.arkauth.views",
         "documentation": {}
     },
@@ -609,7 +609,7 @@
         "kind": 2,
         "importPath": "ecommerse.arkauth.views",
         "description": "ecommerse.arkauth.views",
-        "peekOfCode": "def logoutuser(request):\n    logout(request)\n    messages.success(request,\"logout user!\")\n    return redirect(\"/arkauth/login/\")\nclass ActivateAccountView(View):\n    def get(self, request, uidb64, token):\n        try:\n            id = force_str(urlsafe_base64_decode(uidb64))\n            user = User.objects.get(pk=id)\n            if generate_token.check_token(user, token):  # Make sure you have a valid check_token function",
+        "peekOfCode": "def logoutuser(request):\n    logout(request)\n    messages.success(request,\"logout user!\")\n    return redirect(\"/arkauth/login/\")\nclass ActivateAccountView(View):\n    def get(self, request, uidb64, token):  # sourcery skip: avoid-builtin-shadow\n        try:\n            id = force_str(urlsafe_base64_decode(uidb64))\n            user = User.objects.get(pk=id)\n            if generate_token.check_token(user, token):  # Make sure you have a valid check_token function",
         "detail": "ecommerse.arkauth.views",
         "documentation": {}
     },
