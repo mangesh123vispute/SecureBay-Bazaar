@@ -6,8 +6,10 @@ from math import ceil
 # Create your views here.
 
 def home(request):
-    current_user=request.user  
-    print(current_user)
+   return render(request, 'index.html')
+
+def purchase(request):
+    
     allprods=[]
     catpods=Product.objects.values('category','id')
     cats={ item['category'] for item in catpods }
@@ -18,4 +20,4 @@ def home(request):
         allprods.append([prod,range(1,nSlides),nSlides])
 
     params={'allProds':allprods }
-    return render(request,"index.html",params)
+    return render(request,"purchase.html",params)
