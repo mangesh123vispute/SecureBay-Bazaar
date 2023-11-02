@@ -25,6 +25,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -587,6 +619,50 @@
         "documentation": {}
     },
     {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "AES",
+        "importPath": "Crypto.Cipher",
+        "description": "Crypto.Cipher",
+        "isExtraImport": true,
+        "detail": "Crypto.Cipher",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -605,6 +681,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.migrations.0002_orders",
+        "description": "ecommerse.arkapp.migrations.0002_orders",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arkapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Orders',\n            fields=[\n                ('order_id', models.AutoField(primary_key=True, serialize=False)),\n                ('items_json', models.CharField(max_length=5000)),",
+        "detail": "ecommerse.arkapp.migrations.0002_orders",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.migrations.0003_orderupdate",
+        "description": "ecommerse.arkapp.migrations.0003_orderupdate",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arkapp', '0002_orders'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='OrderUpdate',\n            fields=[\n                ('update_id', models.AutoField(primary_key=True, serialize=False)),\n                ('order_id', models.IntegerField(default='')),",
+        "detail": "ecommerse.arkapp.migrations.0003_orderupdate",
+        "documentation": {}
+    },
+    {
         "label": "ArkappConfig",
         "kind": 6,
         "importPath": "ecommerse.arkapp.apps",
@@ -619,6 +713,24 @@
         "importPath": "ecommerse.arkapp.models",
         "description": "ecommerse.arkapp.models",
         "peekOfCode": "class Product(models.Model):\n    product_id=models.AutoField\n    product_name=models.CharField(max_length=50)\n    category=models.CharField(max_length=50,default=\"\")\n    subcategroy=models.CharField(max_length=50,default=\"\")\n    price=models.IntegerField(default=0)\n    desc=models.CharField(max_length=300)\n    pub_date=models.DateField()\n    image=models.ImageField(upload_to=\"shop/images\",default=\"\")\n    def __str__(self):",
+        "detail": "ecommerse.arkapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Orders",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.models",
+        "description": "ecommerse.arkapp.models",
+        "peekOfCode": "class Orders(models.Model):\n    order_id = models.AutoField(primary_key=True)\n    items_json =  models.CharField(max_length=5000)\n    amount = models.IntegerField(default=0)\n    name = models.CharField(max_length=90)\n    email = models.CharField(max_length=90)\n    address1 = models.CharField(max_length=200)\n    address2 = models.CharField(max_length=200)\n    city = models.CharField(max_length=100)\n    state = models.CharField(max_length=100)",
+        "detail": "ecommerse.arkapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderUpdate",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.models",
+        "description": "ecommerse.arkapp.models",
+        "peekOfCode": "class OrderUpdate(models.Model):\n    update_id = models.AutoField(primary_key=True)\n    order_id = models.IntegerField(default=\"\")\n    update_desc = models.CharField(max_length=5000)\n    timestamp = models.DateField(auto_now_add=True)\n    def __str__(self):\n        return self.update_desc[0:7] + \"...\"",
         "detail": "ecommerse.arkapp.models",
         "documentation": {}
     },
@@ -654,7 +766,7 @@
         "kind": 2,
         "importPath": "ecommerse.arkapp.views",
         "description": "ecommerse.arkapp.views",
-        "peekOfCode": "def checkout(request):\n    if not request.user.is_authenticated:\n        messages.warning(request,\"login and try again\")\n        return redirect(\"/arkauth/login\")\n    return render(request,'checkout.html')",
+        "peekOfCode": "def checkout(request):\n    if not request.user.is_authenticated:\n        messages.warning(request,\"login and try again\")\n        return redirect(\"/arkauth/login\")\n    if request.method==\"POST\":\n        items_json = request.POST.get('itemsJson', '')\n        name = request.POST.get('name', '')\n        amount = request.POST.get('amt')\n        email = request.POST.get('email', '')\n        address1 = request.POST.get('address1', '')",
         "detail": "ecommerse.arkapp.views",
         "documentation": {}
     },
@@ -998,6 +1110,87 @@
         "description": "ecommerse.ecommerse.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "ecommerse.ecommerse.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "generate_checksum",
+        "kind": 2,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "def generate_checksum(param_dict, merchant_key, salt=None):\n    params_string = __get_param_string__(param_dict)\n    salt = salt if salt else __id_generator__(4)\n    final_string = '%s|%s' % (params_string, salt)\n    hasher = hashlib.sha256(final_string.encode())\n    hash_string = hasher.hexdigest()\n    hash_string += salt\n    return __encode__(hash_string, IV, merchant_key)\ndef generate_refund_checksum(param_dict, merchant_key, salt=None):\n    for i in param_dict:",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "generate_refund_checksum",
+        "kind": 2,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "def generate_refund_checksum(param_dict, merchant_key, salt=None):\n    for i in param_dict:\n        if(\"|\" in param_dict[i]):\n            param_dict = {}\n            exit()\n    params_string = __get_param_string__(param_dict)\n    salt = salt if salt else __id_generator__(4)\n    final_string = '%s|%s' % (params_string, salt)\n    hasher = hashlib.sha256(final_string.encode())\n    hash_string = hasher.hexdigest()",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "generate_checksum_by_str",
+        "kind": 2,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "def generate_checksum_by_str(param_str, merchant_key, salt=None):\n    params_string = param_str\n    salt = salt if salt else __id_generator__(4)\n    final_string = '%s|%s' % (params_string, salt)\n    hasher = hashlib.sha256(final_string.encode())\n    hash_string = hasher.hexdigest()\n    hash_string += salt\n    return __encode__(hash_string, IV, merchant_key)\ndef verify_checksum(param_dict, merchant_key, checksum):\n    # Remove checksum",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "verify_checksum",
+        "kind": 2,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "def verify_checksum(param_dict, merchant_key, checksum):\n    # Remove checksum\n    if 'CHECKSUMHASH' in param_dict:\n        param_dict.pop('CHECKSUMHASH')\n    # Get salt\n    paytm_hash = __decode__(checksum, IV, merchant_key)\n    salt = paytm_hash[-4:]\n    calculated_checksum = generate_checksum(param_dict, merchant_key, salt=salt)\n    return calculated_checksum == checksum\ndef verify_checksum_by_str(param_str, merchant_key, checksum):",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "verify_checksum_by_str",
+        "kind": 2,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "def verify_checksum_by_str(param_str, merchant_key, checksum):\n    # Remove checksum\n    #if 'CHECKSUMHASH' in param_dict:\n        #param_dict.pop('CHECKSUMHASH')\n    # Get salt\n    paytm_hash = __decode__(checksum, IV, merchant_key)\n    salt = paytm_hash[-4:]\n    calculated_checksum = generate_checksum_by_str(param_str, merchant_key, salt=salt)\n    return calculated_checksum == checksum\ndef __id_generator__(size=6, chars=string.ascii_uppercase + string.digits + string.ascii_lowercase):",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "IV",
+        "kind": 5,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "IV = \"@@@@&&&&####$$$$\"\nBLOCK_SIZE = 16\ndef generate_checksum(param_dict, merchant_key, salt=None):\n    params_string = __get_param_string__(param_dict)\n    salt = salt if salt else __id_generator__(4)\n    final_string = '%s|%s' % (params_string, salt)\n    hasher = hashlib.sha256(final_string.encode())\n    hash_string = hasher.hexdigest()\n    hash_string += salt\n    return __encode__(hash_string, IV, merchant_key)",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "BLOCK_SIZE",
+        "kind": 5,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "BLOCK_SIZE = 16\ndef generate_checksum(param_dict, merchant_key, salt=None):\n    params_string = __get_param_string__(param_dict)\n    salt = salt if salt else __id_generator__(4)\n    final_string = '%s|%s' % (params_string, salt)\n    hasher = hashlib.sha256(final_string.encode())\n    hash_string = hasher.hexdigest()\n    hash_string += salt\n    return __encode__(hash_string, IV, merchant_key)\ndef generate_refund_checksum(param_dict, merchant_key, salt=None):",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "__pad__",
+        "kind": 5,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "__pad__ = lambda s: s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * chr(BLOCK_SIZE - len(s) % BLOCK_SIZE)\n__unpad__ = lambda s: s[0:-ord(s[-1])]\ndef __encode__(to_encode, iv, key):\n    # Pad\n    to_encode = __pad__(to_encode)\n    # Encrypt\n    c = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv.encode('utf-8'))\n    to_encode = c.encrypt(to_encode.encode('utf-8'))\n    # Encode\n    to_encode = base64.b64encode(to_encode)",
+        "detail": "ecommerse.PayTm.Checksum",
+        "documentation": {}
+    },
+    {
+        "label": "__unpad__",
+        "kind": 5,
+        "importPath": "ecommerse.PayTm.Checksum",
+        "description": "ecommerse.PayTm.Checksum",
+        "peekOfCode": "__unpad__ = lambda s: s[0:-ord(s[-1])]\ndef __encode__(to_encode, iv, key):\n    # Pad\n    to_encode = __pad__(to_encode)\n    # Encrypt\n    c = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv.encode('utf-8'))\n    to_encode = c.encrypt(to_encode.encode('utf-8'))\n    # Encode\n    to_encode = base64.b64encode(to_encode)\n    return to_encode.decode(\"UTF-8\")",
+        "detail": "ecommerse.PayTm.Checksum",
         "documentation": {}
     },
     {
