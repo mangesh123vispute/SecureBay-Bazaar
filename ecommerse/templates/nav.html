@@ -31,7 +31,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static "assets/css/style.css" %}" rel="stylesheet" >
- 
+ <link rel="stylesheet" href="{% static "assets/css/footer.css" %}">
   {% comment %} imported css  {% endcomment %}
 
   {% block style %} 
@@ -105,6 +105,8 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
   <br>
   
 
+  {% comment %} including footer file  {% endcomment %}
+  {% include 'footer.html' %}
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -122,8 +124,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
   {% endblock script %}
     
   
-  {% comment %} including footer file  {% endcomment %}
-{% include 'footer.html' %}
     
 
   <!-- Template Main JS File -->
