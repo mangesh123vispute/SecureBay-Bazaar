@@ -293,6 +293,22 @@
         "documentation": {}
     },
     {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
         "label": "logout",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
@@ -326,7 +342,23 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -363,6 +395,54 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "BadHeaderError",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
         "documentation": {}
     },
     {
@@ -527,46 +607,6 @@
         "description": "django.utils.encoding",
         "isExtraImport": true,
         "detail": "django.utils.encoding",
-        "documentation": {}
-    },
-    {
-        "label": "send_mail",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "EmailMultiAlternatives",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "EmailMessage",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "BadHeaderError",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "send_mail",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
         "documentation": {}
     },
     {
@@ -788,7 +828,7 @@
         "kind": 5,
         "importPath": "arkapp.urls",
         "description": "arkapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\"),\n    path('purchase/',views.purchase,name=\"purchase\"),\n    path('checkout/',views.checkout,name=\"checkout\"),\n    path('handlerequest/', views.handlerequest, name=\"HandleRequest\"),\n    path('tracker/', views.tracker, name=\"TrackingStatus\"),\n    path('about/', views.about, name=\"about\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\"),\n    path('purchase/',views.purchase,name=\"purchase\"),\n    path('checkout/',views.checkout,name=\"checkout\"),\n    path('handlerequest/', views.handlerequest, name=\"HandleRequest\"),\n    path('tracker/', views.tracker, name=\"TrackingStatus\"),\n    path('about/', views.about, name=\"about\"),\n    path('send_message/', views.SendMessage, name=\"about\"),\n]",
         "detail": "arkapp.urls",
         "documentation": {}
     },
@@ -842,7 +882,16 @@
         "kind": 2,
         "importPath": "arkapp.views",
         "description": "arkapp.views",
-        "peekOfCode": "def about(request):\n    return render(request, 'about.html')",
+        "peekOfCode": "def about(request):\n    return render(request, 'about.html')\ndef SendMessage(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email_from = request.POST.get('email')\n        password = request.POST.get('pass')\n        subject = request.POST.get('subject')\n        message = request.POST.get('message')\n        user = authenticate(request, username=email_from, password=password)",
+        "detail": "arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "SendMessage",
+        "kind": 2,
+        "importPath": "arkapp.views",
+        "description": "arkapp.views",
+        "peekOfCode": "def SendMessage(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email_from = request.POST.get('email')\n        password = request.POST.get('pass')\n        subject = request.POST.get('subject')\n        message = request.POST.get('message')\n        user = authenticate(request, username=email_from, password=password)\n        if user is not None:\n            recipient_list=['mangesh2003vispute@gmail.com',]",
         "detail": "arkapp.views",
         "documentation": {}
     },

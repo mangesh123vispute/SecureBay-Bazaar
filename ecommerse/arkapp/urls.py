@@ -8,6 +8,7 @@ urlpatterns = [
     path('handlerequest/', views.handlerequest, name="HandleRequest"),
     path('tracker/', views.tracker, name="TrackingStatus"),
     path('about/', views.about, name="about"),
+    path('send_message/', views.SendMessage, name="about"),
 
     
 ]

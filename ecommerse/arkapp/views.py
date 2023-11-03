@@ -3,8 +3,11 @@ import django.conf
 import django.contrib.auth
 import django.contrib.auth.models
 from django.shortcuts import render
+from django.shortcuts import redirect
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
+from django.core.mail import send_mail
 from django.http import HttpResponse
-
 from .models import Product,Orders
 from .models import OrderUpdate
 from math import ceil
@@ -15,6 +18,7 @@ from django.views.decorators.csrf import csrf_exempt
 from PayTm import Checksum
 import json
 from django.conf import settings
+from django.contrib.auth import authenticate
 
 
 MERCHANT_KEY=keys.MK
@@ -158,3 +162,25 @@ def tracker(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def SendMessage(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email_from = request.POST.get('email')
+        password = request.POST.get('pass')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+    
+        user = authenticate(request, username=email_from, password=password)
+
+        
+        if user is not None:
+            recipient_list=['mangesh2003vispute@gmail.com',]
+            send_mail(subject,message,email_from,recipient_list)
+          
+            return HttpResponse("Your message has been sent. Thank you!")
+        else:
+            return HttpResponse("Authentication failed. Please login first.")
+    
+    return render(request, 'index.html') 
