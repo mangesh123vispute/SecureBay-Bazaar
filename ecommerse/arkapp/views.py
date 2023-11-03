@@ -1,3 +1,5 @@
+import arkapp
+import django.conf
 import django.contrib.auth
 import django.contrib.auth.models
 from django.shortcuts import render
@@ -6,6 +8,14 @@ from .models import OrderUpdate
 from math import ceil
 from django.contrib import messages
 from django.shortcuts import redirect
+from arkapp import keys
+from django.views.decorators.csrf import csrf_exempt
+from PayTm import Checksum
+import json
+from django.conf import settings
+
+
+MERCHANT_KEY=keys.MK
 # Create your views here.
 
 def home(request):
@@ -57,7 +67,7 @@ def checkout(request):
         oid=str(id)
         param_dict = {
 
-            'MID': 'add ur merchant id',
+            'MID': keys.MID,
             'ORDER_ID': oid,
             'TXN_AMOUNT': str(amount),
             'CUST_ID': email,
@@ -71,3 +81,39 @@ def checkout(request):
         return render(request, 'paytm.html', {'param_dict': param_dict})
 
     return render(request, 'checkout.html')
+
+
+@csrf_exempt
+def handlerequest(request):
+
+    # paytm will send you post request here
+    form = request.POST
+    response_dict = {}
+    for i in form.keys():
+        response_dict[i] = form[i]
+        if i == 'CHECKSUMHASH':
+            checksum = form[i]
+
+    verify = Checksum.verify_checksum(response_dict, MERCHANT_KEY, checksum)
+    if verify:
+        if response_dict['RESPCODE'] == '01':
+            print('order successful')
+            a=response_dict['ORDERID']
+            b=response_dict['TXNAMOUNT']
+            rid=a.replace("SecureBuy","")
+           
+            # print(rid)
+            filter2= Orders.objects.filter(order_id=rid)
+           
+            print(filter2)
+            print(a,b)
+            for post1 in filter2:
+
+                post1.oid=a
+                post1.amountpaid=b
+                post1.paymentstatus="PAID"
+                post1.save()
+            print("run agede function")
+        else:
+            print('order was not successful because' + response_dict['RESPMSG'])
+    return render(request, 'paymentstatus.html', {'response': response_dict})
