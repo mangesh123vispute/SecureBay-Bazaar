@@ -366,6 +366,14 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "ceil",
         "importPath": "math",
         "description": "math",
@@ -780,7 +788,7 @@
         "kind": 5,
         "importPath": "arkapp.urls",
         "description": "arkapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\"),\n    path('purchase/',views.purchase,name=\"purchase\"),\n    path('checkout/',views.checkout,name=\"checkout\"),\n    path('handlerequest/', views.handlerequest, name=\"HandleRequest\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\"),\n    path('purchase/',views.purchase,name=\"purchase\"),\n    path('checkout/',views.checkout,name=\"checkout\"),\n    path('handlerequest/', views.handlerequest, name=\"HandleRequest\"),\n    path('tracker/', views.tracker, name=\"TrackingStatus\"),\n    path('about/', views.about, name=\"about\"),\n]",
         "detail": "arkapp.urls",
         "documentation": {}
     },
@@ -789,7 +797,7 @@
         "kind": 2,
         "importPath": "arkapp.views",
         "description": "arkapp.views",
-        "peekOfCode": "def home(request):\n   return render(request, 'index.html')\ndef purchase(request):\n    allprods=[]\n    catpods=Product.objects.values('category','id')\n    cats={ item['category'] for item in catpods }\n    for cat in cats:\n        prod=Product.objects.filter(category=cat)\n        n=len(prod)\n        nSlides=n//4+ceil((n/4)-(n//4))",
+        "peekOfCode": "def home(request):\n    allprods=[]\n    catpods=Product.objects.values('category','id')\n    cats={ item['category'] for item in catpods }\n    for cat in cats:\n        prod=Product.objects.filter(category=cat)\n        n=len(prod)\n        nSlides=n//4+ceil((n/4)-(n//4))\n        allprods.append([prod,range(1,nSlides),nSlides])\n    params={'allProds':allprods }",
         "detail": "arkapp.views",
         "documentation": {}
     },
@@ -817,6 +825,24 @@
         "importPath": "arkapp.views",
         "description": "arkapp.views",
         "peekOfCode": "def handlerequest(request):\n    # paytm will send you post request here\n    form = request.POST\n    response_dict = {}\n    for i in form.keys():\n        response_dict[i] = form[i]\n        if i == 'CHECKSUMHASH':\n            checksum = form[i]\n    verify = Checksum.verify_checksum(response_dict, MERCHANT_KEY, checksum)\n    if verify:",
+        "detail": "arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "tracker",
+        "kind": 2,
+        "importPath": "arkapp.views",
+        "description": "arkapp.views",
+        "peekOfCode": "def tracker(request):\n    if not request.user.is_authenticated:\n        messages.warning(request,\"Login & Try Again\")\n        return redirect('arkauth/login/')\n    if request.method==\"POST\":\n        orderId = request.POST.get('orderId', '')\n        email = request.POST.get('email', '')\n        try:\n            order = Orders.objects.filter(order_id=orderId, email=email)\n            if len(order)>0:",
+        "detail": "arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "arkapp.views",
+        "description": "arkapp.views",
+        "peekOfCode": "def about(request):\n    return render(request, 'about.html')",
         "detail": "arkapp.views",
         "documentation": {}
     },

@@ -3,6 +3,8 @@ import django.conf
 import django.contrib.auth
 import django.contrib.auth.models
 from django.shortcuts import render
+from django.http import HttpResponse
+
 from .models import Product,Orders
 from .models import OrderUpdate
 from math import ceil
@@ -19,7 +21,18 @@ MERCHANT_KEY=keys.MK
 # Create your views here.
 
 def home(request):
-   return render(request, 'index.html')
+    allprods=[]
+    catpods=Product.objects.values('category','id')
+    cats={ item['category'] for item in catpods }
+    for cat in cats:
+        prod=Product.objects.filter(category=cat)
+        n=len(prod)
+        nSlides=n//4+ceil((n/4)-(n//4))
+        allprods.append([prod,range(1,nSlides),nSlides])
+
+    params={'allProds':allprods }
+    
+    return render(request, 'index.html',params)
 
 def purchase(request):
     
@@ -117,3 +130,31 @@ def handlerequest(request):
         else:
             print('order was not successful because' + response_dict['RESPMSG'])
     return render(request, 'paymentstatus.html', {'response': response_dict})
+
+
+def tracker(request):
+    if not request.user.is_authenticated:
+        messages.warning(request,"Login & Try Again")
+        return redirect('arkauth/login/')
+    if request.method=="POST":
+        orderId = request.POST.get('orderId', '')
+        email = request.POST.get('email', '')
+        try:
+            order = Orders.objects.filter(order_id=orderId, email=email)
+            if len(order)>0:
+                update = OrderUpdate.objects.filter(order_id=orderId)
+                updates = []
+                for item in update:
+                    updates.append({'text': item.update_desc, 'time': item.timestamp})
+                    response = json.dumps([updates, order[0].items_json], default=str)
+                return HttpResponse(response)
+            else:
+                return HttpResponse('{no orders}')
+        except Exception as e:
+            return HttpResponse('{}')
+
+    return render(request, 'tracker.html')
+
+
+def about(request):
+    return render(request, 'about.html')
