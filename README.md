@@ -49,7 +49,8 @@ Thank you for choosing SecureBuy for your ecommerce needs!
 9. **100% Authentication with Email**: SecureBuy guarantees that user accounts are created and authenticated using email addresses for enhanced security.
 
 ## Screenshots
-![image](https://github.com/mangesh123vispute/SecureBuy-Bazaar/assets/112755002/3589bb48-ae8c-4d52-b8ee-c8a54e30511c)
+![image](https://github.com/mangesh123vispute/SecureBuy-Bazaar/assets/112755002/f439cccb-54c0-49ee-9af9-ab52d7401081)
+
 
 
 ## Database
