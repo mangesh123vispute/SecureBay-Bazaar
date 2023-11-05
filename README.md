@@ -49,7 +49,7 @@ PAYTM_MERCHANT_KEY = "your_merchant_key_here"
 
 Replace "your_merchant_id_here" and "your_merchant_key_here" with your actual Paytm Merchant ID and Key.
 
-Once you've configured the Paytm integration, SecureBuy will securely process payments through Paytm.
+
 
 If you require additional information or assistance, please don't hesitate to reach out for support.
 
