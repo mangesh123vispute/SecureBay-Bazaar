@@ -1298,7 +1298,7 @@
         "kind": 5,
         "importPath": "ecommerse.settings",
         "description": "ecommerse.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'ecommerce',\n        'USER': 'root',\n        'PASSWORD': '1234',\n        'HOST':'localhost',",
         "detail": "ecommerse.settings",
         "documentation": {}
     },
@@ -1307,7 +1307,7 @@
         "kind": 5,
         "importPath": "ecommerse.settings",
         "description": "ecommerse.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'ecommerce',\n        'USER': 'root',\n        'PASSWORD': '1234',\n        'HOST':'localhost',\n        'PORT':'3306',\n    }\n}",
         "detail": "ecommerse.settings",
         "documentation": {}
     },

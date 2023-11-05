@@ -57,6 +57,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -86,6 +118,56 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.conf",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -99,6 +181,14 @@
     },
     {
         "label": "views",
+        "importPath": "arkapp",
+        "description": "arkapp",
+        "isExtraImport": true,
+        "detail": "arkapp",
+        "documentation": {}
+    },
+    {
+        "label": "keys",
         "importPath": "arkapp",
         "description": "arkapp",
         "isExtraImport": true,
@@ -160,6 +250,87 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "post_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
+        "isExtraImport": true,
+        "detail": "django.dispatch",
         "documentation": {}
     },
     {
@@ -235,11 +406,35 @@
         "documentation": {}
     },
     {
+        "label": "MyProfile",
+        "importPath": "arkapp.views",
+        "description": "arkapp.views",
+        "isExtraImport": true,
+        "detail": "arkapp.views",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib.auth",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
         "detail": "django.contrib.auth",
         "documentation": {}
     },
@@ -268,24 +463,15 @@
         "documentation": {}
     },
     {
-        "label": "django.contrib.auth.models",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -325,11 +511,140 @@
         "documentation": {}
     },
     {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "BadHeaderError",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "importPath": "ecommerse.settings",
+        "description": "ecommerse.settings",
+        "isExtraImport": true,
+        "detail": "ecommerse.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "importPath": "ecommerse.settings",
+        "description": "ecommerse.settings",
+        "isExtraImport": true,
+        "detail": "ecommerse.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "importPath": "ecommerse.settings",
+        "description": "ecommerse.settings",
+        "isExtraImport": true,
+        "detail": "ecommerse.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "importPath": "ecommerse.settings",
+        "description": "ecommerse.settings",
+        "isExtraImport": true,
+        "detail": "ecommerse.settings",
+        "documentation": {}
+    },
+    {
         "label": "ceil",
         "importPath": "math",
         "description": "math",
         "isExtraImport": true,
         "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "Checksum",
+        "importPath": "PayTm",
+        "description": "PayTm",
+        "isExtraImport": true,
+        "detail": "PayTm",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginRequiredMixin",
+        "importPath": "django.contrib.auth.mixins",
+        "description": "django.contrib.auth.mixins",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.mixins",
         "documentation": {}
     },
     {
@@ -456,100 +771,11 @@
         "documentation": {}
     },
     {
-        "label": "send_mail",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "EmailMultiAlternatives",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "EmailMessage",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "BadHeaderError",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
-        "label": "send_mail",
-        "importPath": "django.core.mail",
-        "description": "django.core.mail",
-        "isExtraImport": true,
-        "detail": "django.core.mail",
-        "documentation": {}
-    },
-    {
         "label": "mail",
         "importPath": "django.core",
         "description": "django.core",
         "isExtraImport": true,
         "detail": "django.core",
-        "documentation": {}
-    },
-    {
-        "label": "django.conf",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "EMAIL_HOST",
-        "importPath": "ecommerse.settings",
-        "description": "ecommerse.settings",
-        "isExtraImport": true,
-        "detail": "ecommerse.settings",
-        "documentation": {}
-    },
-    {
-        "label": "EMAIL_HOST_USER",
-        "importPath": "ecommerse.settings",
-        "description": "ecommerse.settings",
-        "isExtraImport": true,
-        "detail": "ecommerse.settings",
-        "documentation": {}
-    },
-    {
-        "label": "EMAIL_HOST_USER",
-        "importPath": "ecommerse.settings",
-        "description": "ecommerse.settings",
-        "isExtraImport": true,
-        "detail": "ecommerse.settings",
         "documentation": {}
     },
     {
@@ -699,12 +925,48 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.migrations.0004_profile",
+        "description": "ecommerse.arkapp.migrations.0004_profile",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('arkapp', '0003_orderupdate'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Profile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "ecommerse.arkapp.migrations.0004_profile",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.migrations.0005_profile_billing_address_profile_shipping_address",
+        "description": "ecommerse.arkapp.migrations.0005_profile_billing_address_profile_shipping_address",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arkapp', '0004_profile'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='profile',\n            name='billing_address',\n            field=models.CharField(default='', max_length=255),\n        ),",
+        "detail": "ecommerse.arkapp.migrations.0005_profile_billing_address_profile_shipping_address",
+        "documentation": {}
+    },
+    {
         "label": "ArkappConfig",
         "kind": 6,
         "importPath": "ecommerse.arkapp.apps",
         "description": "ecommerse.arkapp.apps",
-        "peekOfCode": "class ArkappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'arkapp'",
+        "peekOfCode": "class ArkappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'arkapp'\n    def ready(self):\n        import arkapp.signals",
         "detail": "ecommerse.arkapp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateForm",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.forms",
+        "description": "ecommerse.arkapp.forms",
+        "peekOfCode": "class UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = User\n        fields = ['username', 'first_name', 'last_name', 'email']\nclass ProfileUpdateForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = \"__all__\"",
+        "detail": "ecommerse.arkapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileUpdateForm",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.forms",
+        "description": "ecommerse.arkapp.forms",
+        "peekOfCode": "class ProfileUpdateForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = \"__all__\"",
+        "detail": "ecommerse.arkapp.forms",
         "documentation": {}
     },
     {
@@ -730,8 +992,35 @@
         "kind": 6,
         "importPath": "ecommerse.arkapp.models",
         "description": "ecommerse.arkapp.models",
-        "peekOfCode": "class OrderUpdate(models.Model):\n    update_id = models.AutoField(primary_key=True)\n    order_id = models.IntegerField(default=\"\")\n    update_desc = models.CharField(max_length=5000)\n    timestamp = models.DateField(auto_now_add=True)\n    def __str__(self):\n        return self.update_desc[0:7] + \"...\"",
+        "peekOfCode": "class OrderUpdate(models.Model):\n    update_id = models.AutoField(primary_key=True)\n    order_id = models.IntegerField(default=\"\")\n    update_desc = models.CharField(max_length=5000)\n    timestamp = models.DateField(auto_now_add=True)\n    def __str__(self):\n        return self.update_desc[0:7] + \"...\"\nclass Profile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    avatar = models.ImageField(",
         "detail": "ecommerse.arkapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.models",
+        "description": "ecommerse.arkapp.models",
+        "peekOfCode": "class Profile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    avatar = models.ImageField(\n        default='avatar.png', \n        upload_to='profile_avatars' \n    )\n    shipping_address = models.CharField(max_length=255,default='')\n    billing_address = models.CharField(max_length=255,default='')\n    def __str__(self):\n        return f'{self.user.username} Profile'",
+        "detail": "ecommerse.arkapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "create_profile",
+        "kind": 2,
+        "importPath": "ecommerse.arkapp.signals",
+        "description": "ecommerse.arkapp.signals",
+        "peekOfCode": "def create_profile(sender, instance, created, **kwargs):\n    if created:\n        Profile.objects.create(user=instance)\n@receiver(post_save, sender=User)\ndef save_profile(sender, instance, **kwargs):\n    instance.profile.save()",
+        "detail": "ecommerse.arkapp.signals",
+        "documentation": {}
+    },
+    {
+        "label": "save_profile",
+        "kind": 2,
+        "importPath": "ecommerse.arkapp.signals",
+        "description": "ecommerse.arkapp.signals",
+        "peekOfCode": "def save_profile(sender, instance, **kwargs):\n    instance.profile.save()",
+        "detail": "ecommerse.arkapp.signals",
         "documentation": {}
     },
     {
@@ -739,8 +1028,17 @@
         "kind": 5,
         "importPath": "ecommerse.arkapp.urls",
         "description": "ecommerse.arkapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\"),\n    path('purchase/',views.purchase,name=\"purchase\"),\n    path('checkout/',views.checkout,name=\"checkout\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',views.home,name=\"index\"),\n    path('purchase/',views.purchase,name=\"purchase\"),\n    path('checkout/',views.checkout,name=\"checkout\"),\n    path('handlerequest/', views.handlerequest, name=\"HandleRequest\"),\n    path('tracker/', views.tracker, name=\"TrackingStatus\"),\n    path('about/', views.about, name=\"about\"),\n    path('send_message/', views.SendMessage, name=\"about\"),\n    path('profile/',MyProfile.as_view(), name=\"profile\"),\n]",
         "detail": "ecommerse.arkapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "MyProfile",
+        "kind": 6,
+        "importPath": "ecommerse.arkapp.views",
+        "description": "ecommerse.arkapp.views",
+        "peekOfCode": "class MyProfile(LoginRequiredMixin, View):\n        login_url = '/arkauth/login/'\n        redirect_field_name = 'next'\n        def get(self, request):\n            user_form = UserUpdateForm(instance=request.user)\n            profile_form = ProfileUpdateForm(instance=request.user.profile)\n            context = { \n                'user_form': user_form,\n                'profile_form': profile_form\n            }",
+        "detail": "ecommerse.arkapp.views",
         "documentation": {}
     },
     {
@@ -748,7 +1046,7 @@
         "kind": 2,
         "importPath": "ecommerse.arkapp.views",
         "description": "ecommerse.arkapp.views",
-        "peekOfCode": "def home(request):\n   return render(request, 'index.html')\ndef purchase(request):\n    allprods=[]\n    catpods=Product.objects.values('category','id')\n    cats={ item['category'] for item in catpods }\n    for cat in cats:\n        prod=Product.objects.filter(category=cat)\n        n=len(prod)\n        nSlides=n//4+ceil((n/4)-(n//4))",
+        "peekOfCode": "def home(request):\n    allprods=[]\n    allprof=Profile.objects.all()\n    catpods=Product.objects.values('category','id')\n    cats={ item['category'] for item in catpods }\n    for cat in cats:\n        prod=Product.objects.filter(category=cat)\n        n=len(prod)\n        nSlides=n//4+ceil((n/4)-(n//4))\n        allprods.append([prod,range(1,nSlides),nSlides])",
         "detail": "ecommerse.arkapp.views",
         "documentation": {}
     },
@@ -767,6 +1065,42 @@
         "importPath": "ecommerse.arkapp.views",
         "description": "ecommerse.arkapp.views",
         "peekOfCode": "def checkout(request):\n    if not request.user.is_authenticated:\n        messages.warning(request,\"login and try again\")\n        return redirect(\"/arkauth/login\")\n    if request.method==\"POST\":\n        items_json = request.POST.get('itemsJson', '')\n        name = request.POST.get('name', '')\n        amount = request.POST.get('amt')\n        email = request.POST.get('email', '')\n        address1 = request.POST.get('address1', '')",
+        "detail": "ecommerse.arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "handlerequest",
+        "kind": 2,
+        "importPath": "ecommerse.arkapp.views",
+        "description": "ecommerse.arkapp.views",
+        "peekOfCode": "def handlerequest(request):\n    # paytm will send you post request here\n    form = request.POST\n    response_dict = {}\n    for i in form.keys():\n        response_dict[i] = form[i]\n        if i == 'CHECKSUMHASH':\n            checksum = form[i]\n    verify = Checksum.verify_checksum(response_dict, MERCHANT_KEY, checksum)\n    if verify:",
+        "detail": "ecommerse.arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "tracker",
+        "kind": 2,
+        "importPath": "ecommerse.arkapp.views",
+        "description": "ecommerse.arkapp.views",
+        "peekOfCode": "def tracker(request):\n    if not request.user.is_authenticated:\n        messages.warning(request,\"Login & Try Again\")\n        return redirect('/arkauth/login/')\n    if request.method==\"POST\":\n        orderId = request.POST.get('orderId', '')\n        email = request.POST.get('email', '')\n        try:\n            order = Orders.objects.filter(order_id=orderId, email=email)\n            if len(order)>0:",
+        "detail": "ecommerse.arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "ecommerse.arkapp.views",
+        "description": "ecommerse.arkapp.views",
+        "peekOfCode": "def about(request):\n    return render(request, 'about.html')\ndef SendMessage(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email_from = request.POST.get('email')\n        password = request.POST.get('pass')\n        subject = request.POST.get('subject')\n        message = request.POST.get('message')\n        user = authenticate(request, username=email_from, password=password)",
+        "detail": "ecommerse.arkapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "SendMessage",
+        "kind": 2,
+        "importPath": "ecommerse.arkapp.views",
+        "description": "ecommerse.arkapp.views",
+        "peekOfCode": "def SendMessage(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email_from = request.POST.get('email')\n        password = request.POST.get('pass')\n        subject = request.POST.get('subject')\n        message = request.POST.get('message')\n        user = authenticate(request, username=email_from, password=password)\n        if user is not None:\n            recipient_list=[settings.EMAIL_HOST_USER]",
         "detail": "ecommerse.arkapp.views",
         "documentation": {}
     },
@@ -928,7 +1262,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp',\n    'arkauth'\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp',\n    'arkauth',\n    'crispy_forms',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -964,7 +1298,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'ecommerce',\n        'USER': 'root',\n        'PASSWORD': '1234',\n        'HOST':'localhost',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -973,7 +1307,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'ecommerce',\n        'USER': 'root',\n        'PASSWORD': '1234',\n        'HOST':'localhost',\n        'PORT':'3306',\n    }\n}",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1045,7 +1379,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'\nEMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'\nEMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nCRISPY_TEMPLATE_PACK = 'bootstrap4'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1054,7 +1388,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'\nEMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'\nEMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nCRISPY_TEMPLATE_PACK = 'bootstrap4'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1063,7 +1397,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "EMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'\nEMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "EMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'\nEMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nCRISPY_TEMPLATE_PACK = 'bootstrap4'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1072,7 +1406,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'\nEMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nCRISPY_TEMPLATE_PACK = 'bootstrap4'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1081,7 +1415,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "EMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "EMAIL_PORT = 587    \nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nCRISPY_TEMPLATE_PACK = 'bootstrap4'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1090,7 +1424,16 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nCRISPY_TEMPLATE_PACK = 'bootstrap4'",
+        "detail": "ecommerse.ecommerse.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CRISPY_TEMPLATE_PACK",
+        "kind": 5,
+        "importPath": "ecommerse.ecommerse.settings",
+        "description": "ecommerse.ecommerse.settings",
+        "peekOfCode": "CRISPY_TEMPLATE_PACK = 'bootstrap4'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
