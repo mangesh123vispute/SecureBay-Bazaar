@@ -56,4 +56,4 @@ If you require additional information or assistance, please don't hesitate to re
 Thank you for choosing SecureBuy for your ecommerce needs!
 
 
-You can create a `README.md` file in your project's root directory and paste the content above into it.
+
