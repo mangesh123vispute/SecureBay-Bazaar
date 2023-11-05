@@ -1,0 +1,33 @@
+{% extends "nav.html" %}
+
+
+{% block body %}
+
+{% load crispy_forms_tags %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="container">
+    <h2>Edit Profile</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-md-6">
+          {{ user_form|crispy }}
+        </div>
+        <br>
+        <div class="col-md-6">
+          {{ profile_form|crispy }}
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Update Profile</button>
+    </form>
+  </div>
+
+
+    
+{% endblock body %}
+    

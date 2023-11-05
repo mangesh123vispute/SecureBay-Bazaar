@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'arkapp',
-    'arkauth'
+    'arkauth',
+    'crispy_forms',
+    'crispy_bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +148,5 @@ EMAIL_HOST_USER = 'mangesh2003vispute@gmail.com'
 EMAIL_HOST_PASSWORD = 'bxnd nvlx eazh nbcz'
 EMAIL_PORT = 587    
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -57,7 +57,13 @@
           
           {% if request.user.is_authenticated %}
           <li><a class="nav-link scrollto" href="/arkauth/logout/">Logout</a></li>
-          <li><a class="getstarted scrollto" href="#about">Welcome {{user.username}}</a></li>
+         <li>
+  <a class="nav-link scrollto" href="/profile">
+    <img src="{{ request.user.profile.avatar.url }}" alt="user profile" id="profile" style="width: 30px; height: 30px; border-radius: 30%;">
+  </a>
+</li>
+
+          
          
 
           {% else %}

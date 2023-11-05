@@ -67,15 +67,17 @@
           
           {% if user.is_authenticated %}
           <li><a class="nav-link scrollto" href="/arkauth/logout/">Logout</a></li>
-
+ 
           <button type="button" class="btn btn-success btn-sm" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
 sagittis lacus vel augue laoreet rutrum faucibus.">
 
 
   Cart(<span id="cart">0</span>)
 </button>
-          <li><a class="nav-link scrollto" href="/arkauth/logout/">Welcome --{{user.username}}</a></li>
-          {% else %}
+<a class="nav-link scrollto" href="/profile">
+  <img src="{{ request.user.profile.avatar.url }}" alt="user profile" id="profile" style="width: 30px; height: 30px; border-radius: 30%;">
+</a>
+         {% else %}
           <li><a class="nav-link scrollto" href="/arkauth/login/">Login</a></li>
           {% endif %}
             

@@ -119,18 +119,20 @@
         cart = {};
         updateCart(cart);
     }
-
     function updateCart(cart) {
-        var sum = 0;
-        for (var item in cart) {
-            sum = sum + cart[item][0];
-            document.getElementById('div' + item).innerHTML = "<button id='minus" + item + "'class='btn btn-success minus'>-</button> <span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn btn-success plus'> + </button>";
-        }
-        localStorage.setItem('cart', JSON.stringify(cart));
-        document.getElementById('cart').innerHTML = sum;
-        console.log(cart);
-        updatePopover(cart);
-    }
+      var sum = 0;
+      for (var item in cart) {
+          sum = sum + cart[item][0];
+          var element = document.getElementById('div' + item);
+          if (element) {
+              element.innerHTML = "<button id='minus" + item + "' class='btn btn-success minus'>-</button> <span id='val" + item + "'>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn btn-success plus'> + </button>";
+          }
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));   
+      document.getElementById('cart').innerHTML = sum;
+      console.log(cart);
+      updatePopover(cart);
+  }
 
     //if plus or minus button is clicked change the cart as well as the display value
     $('.divpr').on("click", "button.minus", function() {

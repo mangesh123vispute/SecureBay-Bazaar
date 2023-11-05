@@ -8,7 +8,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from .models import Product,Orders
+from ecommerse.settings import EMAIL_HOST_USER
+from .models import Orders, Product, Profile
 from .models import OrderUpdate
 from math import ceil
 from django.contrib import messages
@@ -19,6 +20,11 @@ from PayTm import Checksum
 import json
 from django.conf import settings
 from django.contrib.auth import authenticate
+from django.views import View
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import UserUpdateForm,ProfileUpdateForm
+from .models import Profile
+
 
 
 MERCHANT_KEY=keys.MK
@@ -26,6 +32,7 @@ MERCHANT_KEY=keys.MK
 
 def home(request):
     allprods=[]
+    allprof=Profile.objects.all()
     catpods=Product.objects.values('category','id')
     cats={ item['category'] for item in catpods }
     for cat in cats:
@@ -34,7 +41,7 @@ def home(request):
         nSlides=n//4+ceil((n/4)-(n//4))
         allprods.append([prod,range(1,nSlides),nSlides])
 
-    params={'allProds':allprods }
+    params={'allProds':allprods ,'allprof':allprof}
     
     return render(request, 'index.html',params)
 
@@ -139,7 +146,7 @@ def handlerequest(request):
 def tracker(request):
     if not request.user.is_authenticated:
         messages.warning(request,"Login & Try Again")
-        return redirect('arkauth/login/')
+        return redirect('/arkauth/login/')
     if request.method=="POST":
         orderId = request.POST.get('orderId', '')
         email = request.POST.get('email', '')
@@ -176,7 +183,7 @@ def SendMessage(request):
 
         
         if user is not None:
-            recipient_list=['mangesh2003vispute@gmail.com',]
+            recipient_list=[settings.EMAIL_HOST_USER]
             send_mail(subject,message,email_from,recipient_list)
           
             return HttpResponse("Your message has been sent. Thank you!")
@@ -184,3 +191,50 @@ def SendMessage(request):
             return HttpResponse("Authentication failed. Please login first.")
     
     return render(request, 'index.html') 
+
+
+
+
+
+
+
+class MyProfile(LoginRequiredMixin, View):
+        login_url = '/arkauth/login/'
+        redirect_field_name = 'next'
+        def get(self, request):
+            user_form = UserUpdateForm(instance=request.user)
+            profile_form = ProfileUpdateForm(instance=request.user.profile)
+            
+            context = { 
+                'user_form': user_form,
+                'profile_form': profile_form
+            }
+            
+            return render(request, 'user/profile.html', context)
+        
+        def post(self,request):
+            user_form = UserUpdateForm(
+                request.POST, 
+                instance=request.user
+            )
+            profile_form = ProfileUpdateForm(
+                request.POST,
+                request.FILES,
+                instance=request.user.profile
+            )
+
+            if user_form.is_valid() and profile_form.is_valid():
+                user_form.save()
+                profile_form.save()
+                
+                messages.success(request,'Your profile has been updated successfully')
+                
+                return redirect('/profile/')
+            else:
+                context = {
+                    'user_form': user_form,
+                    'profile_form': profile_form
+                }
+                messages.error(request,'Error updating you profile')
+                
+                return render(request, 'user/profile.html', context)
