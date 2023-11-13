@@ -156,3 +156,6 @@ EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+RAZOR_KEY_ID = "rzp_test_DCQDshmnwqc4hO"
+RAZOR_KEY_SECRET ="NVzf5Bv6j9sGJMV8kJ4bvXYY"

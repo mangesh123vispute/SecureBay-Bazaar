@@ -12,6 +12,8 @@ urlpatterns = [
     path('about/', views.about, name="about"),
     path('send_message/', views.SendMessage, name="about"),
     path('profile/',MyProfile.as_view(), name="profile"),
+    path('razorpay/', views.homepage, name='homepage'),
+    path('paymenthandler/', views.paymenthandler, name='paymenthandler')
 
     
 ]
