@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
     "builds": [
       {
         "src": "ecommerse/wsgi.py",
@@ -24,4 +25,5 @@
         "dest": "ecommerse/wsgi.py"
       }
     ]
+    
   }
