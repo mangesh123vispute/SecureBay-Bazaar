@@ -86,12 +86,12 @@ WSGI_APPLICATION = 'ecommerse.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecommerce',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',
+        'HOST':'viaduct.proxy.rlwy.net',
+        'PORT':'52308',
     }
 }
 

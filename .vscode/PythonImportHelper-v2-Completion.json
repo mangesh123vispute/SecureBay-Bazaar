@@ -1077,15 +1077,6 @@
         "documentation": {}
     },
     {
-        "label": "whichpay",
-        "kind": 2,
-        "importPath": "ecommerse.arkapp.views",
-        "description": "ecommerse.arkapp.views",
-        "peekOfCode": "def whichpay(request):\n    if request.method =='POST':\n        items_json = request.POST.get('itemsJson', '')\n        name = request.POST.get('name', '')\n        amount = request.POST.get('amt')\n        email = request.POST.get('email', '')\n        address1 = request.POST.get('address1', '')\n        address2 = request.POST.get('address2','')\n        city = request.POST.get('city', '')\n        state = request.POST.get('state', '')",
-        "detail": "ecommerse.arkapp.views",
-        "documentation": {}
-    },
-    {
         "label": "checkout",
         "kind": 2,
         "importPath": "ecommerse.arkapp.views",
@@ -1351,7 +1342,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'ecommerce',\n        'USER': 'root',\n        'PASSWORD': '1234',\n        'HOST':'localhost',",
+        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'railway',\n        'USER': 'postgres',\n        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',\n        'HOST':'viaduct.proxy.rlwy.net',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1360,7 +1351,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'ecommerce',\n        'USER': 'root',\n        'PASSWORD': '1234',\n        'HOST':'localhost',\n        'PORT':'3306',\n    }\n}",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'railway',\n        'USER': 'postgres',\n        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',\n        'HOST':'viaduct.proxy.rlwy.net',\n        'PORT':'52308',\n    }\n}",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
