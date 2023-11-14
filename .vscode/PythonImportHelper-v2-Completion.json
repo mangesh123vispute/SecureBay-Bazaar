@@ -854,6 +854,14 @@
         "documentation": {}
     },
     {
+        "label": "STATIC_URL",
+        "importPath": "ecommerse.ecommerse.settings",
+        "description": "ecommerse.ecommerse.settings",
+        "isExtraImport": true,
+        "detail": "ecommerse.ecommerse.settings",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -1270,7 +1278,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-gstcoe&x00rp65!0ai@r64j3x=ak+)0h55n9mifj-*@muju-_y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-gstcoe&x00rp65!0ai@r64j3x=ak+)0h55n9mifj-*@muju-_y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']\n# Application definition\nINSTALLED_APPS = [",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1279,7 +1287,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-gstcoe&x00rp65!0ai@r64j3x=ak+)0h55n9mifj-*@muju-_y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-gstcoe&x00rp65!0ai@r64j3x=ak+)0h55n9mifj-*@muju-_y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1288,7 +1296,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1297,7 +1305,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp',",
+        "peekOfCode": "ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arkapp',",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1378,7 +1386,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1387,7 +1395,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')\nMEDIA_URL='/media/'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1396,7 +1404,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')\n# Default primary key field type",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1405,7 +1413,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.settings",
         "description": "ecommerse.ecommerse.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAEG_TAGS={",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[\n    os.path.join(BASE_DIR,'static')\n]\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')\nMEDIA_URL='/media/'\nMEDIA_ROOT=os.path.join(BASE_DIR,'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "ecommerse.ecommerse.settings",
         "documentation": {}
     },
@@ -1495,7 +1503,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.urls",
         "description": "ecommerse.ecommerse.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('arkapp.urls')),\n    path('arkauth/',include('arkauth.urls')),\n]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('arkapp.urls')),\n    path('arkauth/',include('arkauth.urls')),\n]\nurlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)\nurlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)",
         "detail": "ecommerse.ecommerse.urls",
         "documentation": {}
     },
@@ -1504,7 +1512,7 @@
         "kind": 5,
         "importPath": "ecommerse.ecommerse.wsgi",
         "description": "ecommerse.ecommerse.wsgi",
-        "peekOfCode": "application = get_wsgi_application()",
+        "peekOfCode": "application = get_wsgi_application()\napp=application",
         "detail": "ecommerse.ecommerse.wsgi",
         "documentation": {}
     },

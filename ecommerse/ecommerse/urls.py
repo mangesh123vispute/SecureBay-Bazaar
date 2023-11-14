@@ -20,6 +20,7 @@ from django.urls import path,include
 from arkauth.views import signup
 from django.conf import settings
 from django.conf.urls.static import static
+from ecommerse.ecommerse.settings import STATIC_URL
 
 admin.site.site_header="SecureBuy"
 admin.site.site_title="ARK admin"
@@ -28,4 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('arkapp.urls')),
     path('arkauth/',include('arkauth.urls')),
-]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+]
+
+urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
