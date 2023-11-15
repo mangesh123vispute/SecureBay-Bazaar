@@ -1342,7 +1342,7 @@
         "kind": 5,
         "importPath": "ecommerse.settings",
         "description": "ecommerse.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'railway',\n        'USER': 'postgres',\n        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',\n        'HOST':'viaduct.proxy.rlwy.net',",
+        "peekOfCode": "WSGI_APPLICATION = 'ecommerse.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql_psycopg2',\n        'NAME': 'railway',\n        'USER': 'postgres',\n        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',\n        'HOST':'viaduct.proxy.rlwy.net',",
         "detail": "ecommerse.settings",
         "documentation": {}
     },
@@ -1351,7 +1351,7 @@
         "kind": 5,
         "importPath": "ecommerse.settings",
         "description": "ecommerse.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'railway',\n        'USER': 'postgres',\n        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',\n        'HOST':'viaduct.proxy.rlwy.net',\n        'PORT':'52308',\n    }\n}",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql_psycopg2',\n        'NAME': 'railway',\n        'USER': 'postgres',\n        'PASSWORD': 'eFgC3a365EeF6EG*4-3f5fGgagDEFfD4',\n        'HOST':'viaduct.proxy.rlwy.net',\n        'PORT':'52308',\n    }\n}",
         "detail": "ecommerse.settings",
         "documentation": {}
     },
