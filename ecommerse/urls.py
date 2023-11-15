@@ -20,7 +20,7 @@ from django.urls import path,include
 from arkauth.views import signup
 from django.conf import settings
 from django.conf.urls.static import static
-from ecommerse.ecommerse.settings import STATIC_URL
+
 
 admin.site.site_header="SecureBuy"
 admin.site.site_title="ARK admin"

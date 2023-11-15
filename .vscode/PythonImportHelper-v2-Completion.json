@@ -854,14 +854,6 @@
         "documentation": {}
     },
     {
-        "label": "STATIC_URL",
-        "importPath": "ecommerse.ecommerse.settings",
-        "description": "ecommerse.ecommerse.settings",
-        "isExtraImport": true,
-        "detail": "ecommerse.ecommerse.settings",
-        "documentation": {}
-    },
-    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
